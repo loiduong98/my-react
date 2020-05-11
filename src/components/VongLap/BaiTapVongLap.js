@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import phimData from '../../data/data.json'
+import background from '../../bg.jpg'
 
 export default class BaiTapVongLap extends Component {
 
@@ -18,8 +19,9 @@ export default class BaiTapVongLap extends Component {
 
 
     render() {
+        var styleBG = {backgroundImage: "url(" + { background } + ")"}
         return (
-            <div>
+            <div style={styleBG}>
                 <div className="container">
                     <div className="row">
                         {this.renderSanPham()}
